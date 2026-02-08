@@ -415,7 +415,7 @@
             <label class="label-field" for="user-name">Name</label>
             <div class="input-field">
             <input  class="text-field" type="text" id="user-name" name="user-name" required />
-            <svg class="icon-form" width="18" height="18">
+            <svg class="icon-form" width="18" height="24">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
@@ -442,12 +442,16 @@
             <label class="label-field" for="user-comment">Comment</label>
             <textarea class="text-comment" type="text" id="user-comment" name="user-comment" placeholder="Text input" required></textarea>
          </div>
-         <div class="field-wrapper chekbox-wrapper">
-            <input id="user-terms" type="checkbox" name="user-terms" value="true" required>
-            <label class="label-field" for="user-terms">I accept the terms and conditions of the <a class="privacy-link" href="#">Privacy Policy</a></label>
-            
+         <div class="checkbox-wrapper">
+            <input class="input-checkbox visually-hidden" id="user-terms" type="checkbox" name="user-terms" value="true" required>
+            <label class="label-field" for="user-terms">
+              <span class="custom-checkbox"><svg class="icon-vector" width="10" height="8">
+              <use href="./images/vector.svg"></use>
+           </svg>
+           </span>
+              I accept the terms and conditions of the <a class="privacy-link" href="#">Privacy Policy</a></label>
          </div>
-        <div class="button-send">
+      <div class="button-send">
         <button class="button-wrapper" type="submit">Send</button>
       </div>
       </form>

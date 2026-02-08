@@ -580,9 +580,6 @@ img {
     fill: #2E2F42
     
 }
-/* .field-wrapper:focus {
-  fill:#4D5AE5;
-} */
 .label-field {
     font-family: inherit;
     display: block;
@@ -607,10 +604,6 @@ img {
     padding: 8px 10px 8px 32px;
     
 }
-
-/* .input-field.focus {
-    fill:#4D5AE5;
-}  */
 .text-comment {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -620,6 +613,7 @@ img {
     resize: none;
     padding-left: 16px;
     padding-top: 8px;
+
 }
 .icon-form {
     position: absolute;
@@ -646,8 +640,6 @@ img {
    border: 1px solid #4D5AE5;
    outline: none;
 }
-
-
 .privacy-link {
     text-decoration: underline;
     color: #4D5AE5;
@@ -656,6 +648,37 @@ img {
 .privacy-link:focus {
     text-decoration: none;
 }
+.label-field {
+    display: flex;
+    align-items: baseline;
+   margin: 0;
+
+}
+/* .input-checkbox {
+    
+} */
+
+.input-checkbox:checked + .label-field .custom-checkbox {
+    background-color: #404BBF;
+    border-radius: 2px;
+    fill: #404BBF;
+    border: 1px solid #404BBF;
+}
+.custom-checkbox { 
+    margin-right: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+
+}
+
 .button-send {
     display: flex;
     gap: 20px;
@@ -672,6 +695,7 @@ img {
    color: #fff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
+    margin-top: 24px;
     
 }
 .button-wrapper:hover,
