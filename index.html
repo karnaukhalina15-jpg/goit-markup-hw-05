@@ -381,41 +381,75 @@
         </li>
       </ul>
     </div>
+    <div class="footer-form">
+      <p class="footer-text">Subskribe</p>
+      <form class="footer-frame">
+        <div class="email-div">
+        <label class="subskribe" for="subskribe-email"></label>
+        <input class="input-subskribe" type="email" id="subskribe-email" name="subskribe-email" placeholder="E-mail" required />
+      </div>
+      <button class="button-form">Subskribe
+         <svg class="icon-Form" width="24" height="24" fill="#fff">
+          <use href="./images/icons.svg#icon-Frame"></use>
+            </svg>
+      </button>
+    </form>
+      </div>
     </div>
     </footer>
     <div class="backdrop is-open">
-      <div class="modal"> 
-          <div class="form-close">
-         <button class="close-popup" >
-            <svg class="icon-close" width="8" height="8" fill="#e7e9fc">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
+      <div class="modal popup-review"> 
+        <div class="form-close">
+         <button class="close-popup">
+          <svg class="icon-close" width="8" height="8" viewBox="0 0 8 8">
+          <use href="./images/icons.svg#icon-close"></use>
+          </svg>
          </button>
-         <p class="text-popup">Leave your contacts and we will call you back</p>
-          <form class="form-title">
-            <div class="filed-wrapper">
-            <label class="label-field" for="user-name">Name</label>
-            <input  class="text-field" type="text" id="user-name" name="user-name" required />
-          </div>
-          <div class="filed-wrapper">
-            <label class="label-field" for="user-phone">Phone</label>
-            <input class="text-field" type="tel" id="user-phone" name="user-phone" />
-           </div>
-          <div>
-            <label class="label-field" for="user-email">Email</label>
-            <input class="text-field" type="email" id="user-email" name="user-email" required />
-          </div class="filed-wrapper">
-          <div>
-            <label class="label-field" for="user-comment">Comment</label>
-            <textarea type="text" id="user-comment" name="user-comment" placeholder="Text input" required></textarea>
-         </div>
-         <div class="filed-wrapper">
-            <label class="label-field" for="user-terms">I accept the terms and conditions of the <a class="privacy-link" href="#">Privacy Policy</a></label>
-            <input id="user-terms" type="checkbox" name="user-terms" value="true" required>
-         </div>
-        </form>
+         
         </div>
-          <button class="button-wrapper" type="submit">Submit</button>
+        <div>
+        <p class="text-popup">Leave your contacts and we will call you back</p>
+        </div>
+        <form class="form-title">
+            <div class="field-wrapper">
+            <label class="label-field" for="user-name">Name</label>
+            <div class="input-field">
+            <input  class="text-field" type="text" id="user-name" name="user-name" required />
+            <svg class="icon-form" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+        </div>
+          <div class="field-wrapper">
+            <label class="label-field" for="user-phone">Phone</label>
+            <div class="input-field">
+            <input class="text-field" type="tel" id="user-phone" name="user-phone" />
+            <svg class="icon-form" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+           </div>
+          </div>
+          <div class="field-wrapper">
+            <label class="label-field" for="user-email">Email</label>
+            <div class="input-field">
+            <input class="text-field" type="email" id="user-email" name="user-email" required />
+          <svg class="icon-form" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          </div>
+          <div class="field-wrapper">
+            <label class="label-field" for="user-comment">Comment</label>
+            <textarea class="text-comment" type="text" id="user-comment" name="user-comment" placeholder="Text input" required></textarea>
+         </div>
+         <div class="field-wrapper chekbox-wrapper">
+            <input id="user-terms" type="checkbox" name="user-terms" value="true" required>
+            <label class="label-field" for="user-terms">I accept the terms and conditions of the <a class="privacy-link" href="#">Privacy Policy</a></label>
+            
+         </div>
+        <div class="button-send">
+        <button class="button-wrapper" type="submit">Send</button>
+      </div>
       </form>
     </div>
     </div>
