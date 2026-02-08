@@ -487,10 +487,10 @@ img {
 .button-form:focus {
     background-color:  #31d0aa;
 }
-.icon-form {
-    margin-left: 16px;
+/* .icon-form {
+    margin-left: 16px; */
 
-}
+/* } */
 .backdrop {
     position: fixed;
     top: 0;
@@ -506,7 +506,7 @@ img {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
     opacity: 1;
@@ -578,7 +578,6 @@ img {
     margin-bottom: 16px;
 
 }
-form
 .field-wrapper {
     margin-bottom: 8px;
     position: relative;
@@ -586,7 +585,7 @@ form
     
 }
 .area-wrapper {
-margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 .label-field {
     font-family: inherit;
@@ -598,6 +597,9 @@ margin-bottom: 16px;
     color: #8e8f99; 
     
 
+}
+.checkbox-field { 
+ margin: 0;
 }
 .input-field {
     position: relative;
@@ -633,9 +635,6 @@ margin-bottom: 16px;
     fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .area-wrapper{
-    margin-top: 4px;
-} */
 .text-field:focus + .icon-form {  
     fill: #4D5AE5;
 }
@@ -653,6 +652,7 @@ margin-bottom: 16px;
    outline: none;
 }
 .privacy-link {
+    margin-left: 4px;
     text-decoration: underline;
     color: #4D5AE5;
 }
@@ -662,8 +662,8 @@ margin-bottom: 16px;
 }
 .label-field {
     display: flex;
+    margin-bottom: 4px;
     align-items: baseline;
-   margin-bottom: 4px;
    fill: #fff;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
