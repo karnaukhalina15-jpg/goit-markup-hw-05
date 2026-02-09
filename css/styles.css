@@ -375,7 +375,9 @@ img {
 .footer-container {
    display: flex;
     align-items: baseline;
-    gap: 120px;  
+}
+.title-logo {
+    margin-right: 120px;
 }
 .main-footer {
     max-width: 100%;
@@ -395,7 +397,10 @@ img {
 }
 .footer-logo {
     color: #f4f4fd;
-    margin-bottom: 16px;
+margin-left: auto;
+ width: 453px;
+    height: 80px;
+
 }
 .footer-text {
     color: #ffffff;
@@ -427,12 +432,14 @@ img {
    align-items: center;
 } 
 .footer-form {
-    width: 453px;
-    height: 80px;
-
+   
+    margin-left: auto;
 }
 .footer-frame {
+    width: 453px;
+    height: 80px;
     display: flex;
+
 
 }
 .input-subscribe {
@@ -483,14 +490,15 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    border: none;
 }
+.icon-frame {
+    margin-left: 16px;
+
+
+}
 .button-form:hover,
 .button-form:focus {
     background-color:  #31d0aa;
 }
-/* .icon-form {
-    margin-left: 16px; */
-
-/* } */
 .backdrop {
     position: fixed;
     top: 0;
@@ -546,19 +554,27 @@ img {
     background-color: #e7e9fc;
     width: 24px;
     height: 24px;
-    fill: #2e2f42;
     border-radius: 100%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .close-popup:hover,
 .close-popup:focus {
     background-color: #404BBF;
-    border: none;
     fill: #fff;
 
+} 
+.icon-close {
+fill: 2E2F42
+ fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.icon-close:hover,
+.icon-close:focus {
+    fill: #fff;
+
+} 
 .form-close { 
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
