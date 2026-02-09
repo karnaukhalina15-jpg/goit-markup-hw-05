@@ -555,29 +555,28 @@ margin-left: auto;
     width: 24px;
     height: 24px;
     border-radius: 100%;
+    fill: #2E2F42;
+    background-color: #e7e9fc;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-}
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+    
 .close-popup:hover,
 .close-popup:focus {
     background-color: #404BBF;
-    fill: #fff;
-
-} 
-.icon-close {
-fill: 2E2F42
- fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     fill: #fff;
 }
-
+/* .icon-close { 
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .icon-close:hover,
 .icon-close:focus {
-    fill: #fff;
-
-} 
+    fill: #fff
+}  */
 .form-close { 
     fill: #2e2f42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .form-close:hover,
 .form-close:focus {
@@ -689,7 +688,6 @@ fill: 2E2F42
     border-radius: 2px;
     fill: #F4F4FD;
     border: 1px solid #404BBF;
-
 }
 .custom-checkbox { 
     fill: none;
