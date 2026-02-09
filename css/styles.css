@@ -542,6 +542,14 @@ margin-left: auto;
 .backdrop:not(.is-open) .modal {
     transform: translate(-50%, -50%) scale(1.5);
 }
+.form-close { 
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+.form-close:hover,
+.form-close:focus {
+    fill: #fff
+} 
 .close-popup {
     cursor: pointer;
     position: absolute;
@@ -551,12 +559,13 @@ margin-left: auto;
     padding: 0;
     stroke-width: 1px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #e7e9fc;
     width: 24px;
     height: 24px;
     border-radius: 100%;
     background-color: #e7e9fc;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
     
 .close-popup:hover,
@@ -564,22 +573,15 @@ margin-left: auto;
     background-color: #404BBF;
      fill: #fff;
 }
-.icon-close { 
+.icon-close: { 
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-close:hover,
-.icon-close:focus {
+.icon-close:focus + {
     fill: #fff;
 } 
-.form-close { 
-    fill: #2e2f42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-}
-.form-close:hover,
-.form-close:focus {
-    fill: #fff
-} 
+
 
 .text-popup {
     font-weight: 500;
@@ -680,10 +682,10 @@ margin-left: auto;
    fill: #fff;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-vektor {
+.icon-vector {
     opacity: 0;
 }
-.icon-vektor:checked {
+.icon-vector:checked {
     opacity: 1;
 }
 .input-checkbox:checked + .label-field .custom-checkbox {
